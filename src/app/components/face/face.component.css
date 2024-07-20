@@ -1,20 +1,23 @@
 .canvas {
-  width: 100%;
+  width: 1200px;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
   height: 800px;
-  background: linear-gradient(#e66465, #9198e5);
+  /* background: linear-gradient(#e66465, #9198e5); */
+  background-color: whitesmoke;
+  /* border-bottom: 1px solid black; */
 }
 .info {
   text-align: left;
   font-size: 2rem;
-  color: white;
+  /* color: white; */
   font-family: "Dosis", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
-  font-style: italic;
-  text-shadow: 1px 1px 2px #9198e5;
+  /* font-style: italic; */
+  text-shadow: 1px 1px 2px white;
   /* border: 1px solid red; */
 }
 .info h1 {
@@ -71,6 +74,7 @@
     flex-direction: column;
     align-items: center;
     height: 700px;
+    width: 100vw;
     justify-content: space-between;
   }
   .info {
