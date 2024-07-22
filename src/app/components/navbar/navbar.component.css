@@ -10,4 +10,19 @@
   position: fixed;
   width: 100vw;
   top: 0;
+  font-family: "Arial", sans-serif !important;
+}
+
+.navbar-collapse ul li {
+  font-size: 24px;
+}
+
+.navbar-collapse ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-collapse ul li a:hover {
+  color: #f0a500;
 }

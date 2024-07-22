@@ -4,24 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 800px;
-  /* background: linear-gradient(#e66465, #9198e5); */
+  height: 600px;
+  font-family: "Arial", sans-serif !important;
   background-color: whitesmoke;
-  /* border-bottom: 1px solid black; */
 }
 .info {
   text-align: left;
-  font-size: 2rem;
-  /* color: white; */
   font-family: "Dosis", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
-  /* font-style: italic; */
-  text-shadow: 1px 1px 2px white;
-  /* border: 1px solid red; */
 }
 .info h1 {
-  font-size: 4rem;
   animation: mavvana 1s ease;
 }
 .info h2 {
@@ -38,34 +31,39 @@
   filter: drop-shadow(0 0 0.75rem rgb(224, 224, 224));
 }
 
-@keyframes post {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.info h1,
+.info h2 {
+  color: #f0a500;
+  opacity: 0;
+  animation: fadeInUp 1.5s forwards;
 }
-@keyframes mavvana {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+
+.info h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  animation-delay: 0.5s;
 }
-@keyframes text {
+
+.info h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation-delay: 1s;
+}
+.info p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Keyframes for animation */
+@keyframes fadeInUp {
   0% {
-    transform: translateY(20px);
     opacity: 0;
+    transform: translateY(20px);
   }
   100% {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -73,7 +71,7 @@
   .canvas {
     flex-direction: column;
     align-items: center;
-    height: 700px;
+    height: 800px;
     width: 100vw;
     justify-content: space-between;
   }
@@ -87,16 +85,18 @@
     word-spacing: 0px;
   }
   .info h1 {
-    font-size: 1.5rem;
+    font-size: 1em;
   }
-
+  .info h2 {
+    font-size: 1.5em;
+  }
   .info p {
     width: 100%; /* Make paragraph width responsive */
     font-size: 1rem; /* Reduce the font size */
   }
 
   .img img {
-    width: 400px; /* Make image width responsive */
+    width: 360px; /* Make image width responsive */
     filter: drop-shadow(
       0 0 0.5rem rgb(224, 224, 224)
     ); /* Adjust shadow for mobile */
