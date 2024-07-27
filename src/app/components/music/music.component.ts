@@ -1,23 +1,25 @@
-import { Component } from '@angular/core';
-import { environment } from '../../environments/environment';
+import { Component, OnInit } from '@angular/core';
+import { environment } from '../../environment/environment';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-music',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './music.component.html',
   styleUrl: './music.component.css',
 })
-export class MusicComponent {
+export class MusicComponent implements OnInit {
   tracks: any = [];
+  ngOnInit(): void {}
   constructor() {
     const getData = async (url: string) => {
       const res = await fetch(url);
       const data = await res.json();
       for (let key in data) {
-        this.tracks.push(data[key])
+        this.tracks.push(data[key]);
       }
-      console.log(this.tracks)
+      console.log(this.tracks);
     };
     getData(environment.FIREBASE_URL + 'music.json');
   }

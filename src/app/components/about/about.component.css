@@ -1,6 +1,6 @@
 .about {
   height: auto;
-  padding: 20px 30px;
+  padding: 0px 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,6 +15,7 @@
 h2{
   color:  #f0a500;
   font-size: 2em;
+  margin-top: 20px;
 }
 .paragraph p {
   text-align: justify;
@@ -22,7 +23,11 @@ h2{
 }
 .img img {
   width: 360px;
-  margin: 20px 0;
+  margin: auto;
+}
+.img{
+  text-align: center;
+
 }
 
 @media (min-width: 960px) {
@@ -32,8 +37,5 @@ h2{
   }
   .img img {
     width: 480px;
-  }
-  .about {
-    padding: 40px;
   }
 }

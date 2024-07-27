@@ -4,17 +4,26 @@
   </div>
   <div class="paragraph">
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus itaque
-      id rem voluptate quas, eveniet a fugiat dignissimos laboriosam, optio
-      officia possimus laudantium Lorem ipsum dolor sit amet, consectetur
-      adipisicing elit. Adipisci voluptates enim obcaecati voluptas,
-      reprehenderit quis, aliquam aspernatur repudiandae neque consequuntur
-      cumque voluptate ab debitis?.
+      Mavvana's music is a captivating blend of innovative soundscapes and
+      emotive storytelling, creating a unique auditory experience. Seamlessly
+      weaving elements from various genres, Mavvana crafts melodies that are
+      both fresh and timeless. The artist's dedication to pushing creative
+      boundaries shines through in intricate production and thoughtful lyrics.
+      Mavvana's music entertains while inviting reflection, making it a
+      compelling choice for those seeking depth and originality. Whether
+      delivering powerful anthems or soothing ballads, Mavvana's tracks leave a
+      lasting impression, showcasing exceptional talent poised to make a
+      significant impact on the music scene.
     </p>
   </div>
   <div class="albums">
-    <div *ngFor="let track of tracks">
-      {{ track.name }}
+    <div class="card" *ngFor="let track of tracks">
+      <img src="{{ track.image }}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ track.name }}</h5>
+        <p class="card-text">{{ track.desc }}</p>
+        <a href="{{ track.url }}" target="_blank" class="btn btn-primary link-btn">Track</a>
+      </div>
     </div>
   </div>
 </div>

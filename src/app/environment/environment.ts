@@ -3,11 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 const FIREBASE_URL = "https://mavvana-1755b-default-rtdb.firebaseio.com/";
+const SERVICE_ID = "service_v4m858m"
+const TEMPLATE_ID = "template_4sbzub5"
+const PUBLIC_KEY = "mP0WY_HkoBIf_EW9a"
 // const STORAGE_URL = "https://firebasestorage.googleapis.com/v0/b";
 
 export const environment = {
   production: true,
-  FIREBASE_URL: FIREBASE_URL,
+  FIREBASE_URL,
+  SERVICE_ID,
+  TEMPLATE_ID,
+  PUBLIC_KEY
   // STORAGE_URL: STORAGE_URL,
 };
 

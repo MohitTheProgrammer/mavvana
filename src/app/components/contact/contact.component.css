@@ -1,7 +1,8 @@
 /* Contact Form Styles */
 .contact-form-container {
   background-color: whitesmoke;
-  padding: 50px;
+  padding: 0 30px;
+  padding-bottom: 50px;
   border-radius: 8px;
   max-width: 600px;
   margin: 0 auto;
@@ -11,7 +12,7 @@
   text-align: center;
   margin-bottom: 30px;
   font-family: "Arial", sans-serif;
-  color:  #f0a500;
+  color: #f0a500;
   font-size: 2em;
 }
 
@@ -41,6 +42,12 @@
   outline: none;
   border-color: #f0a500;
 }
+
+button[disabled] {
+  background-color: #ccc !important; 
+  cursor: not-allowed !important;
+}
+
 
 .contact-form button {
   display: inline-block;

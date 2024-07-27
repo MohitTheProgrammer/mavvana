@@ -15,18 +15,70 @@
   padding: 5px 10px;
 }
 
-h2{
-  color:  #f0a500;
+h2 {
+  color: #f0a500;
   font-size: 2em;
 }
 
+.albums {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 360px;
+  padding: 10px;
+}
 
+.card {
+  width: 90%;
+  margin: auto;
+}
+.link-btn {
+  background-color: #f0a500;
+  border: none;
+}
+.card-title {
+  color: #f0a500;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: b last baseline;
+  text-transform: capitalize;
+}
+.card-text {
+  text-align: justify;
+}
+.link-btn:hover {
+  background-color: #e69500;
+}
 @media (min-width: 960px) {
   .paragraph p {
     width: 1200px;
     font-size: 18px;
   }
-  .music {
-    padding: 40px;
+
+  .albums {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 1200px;
+    padding: 10px;
+  }
+
+  .card {
+    margin: 0 10px;
+    width: 22rem;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: b last baseline;
+    text-transform: capitalize;
+  }
+  .card-text {
+    text-align: justify;
   }
 }
